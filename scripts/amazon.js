@@ -1,6 +1,6 @@
 import {cart, addToCart, updateCartQuantity} from '../data/carts.js';
 import { products } from '../data/products.js';
-
+import {formatCurrency} from './utils/money.js';
 
 /*
 this code is change by for each loop  
@@ -74,7 +74,7 @@ products.forEach((product)=>{// product is a parameter assigned to the loop
             </div>
 
             <div class="product-price">
-                ${(product.priceCents /100).toFixed(2)/*making 2 decimal */}
+                ${formatCurrency(product.priceCents)}
             </div>
 
             <div class="product-quantity-container">
