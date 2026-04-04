@@ -1,4 +1,15 @@
- export const products = [
+ export function getProduct(productId) {
+   let matchingProduct;
+
+        products.forEach((product)=> {
+            if(product.id === productId ){
+                matchingProduct=product;
+            }
+        });
+        return matchingProduct;
+}
+
+export const products = [
   
   
   //this block of code is repitted to add a new product to the website 
