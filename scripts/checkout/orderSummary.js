@@ -143,4 +143,4 @@ export function renderOrderSummary(){
     });
 }
 
-  //renderOrderSummary();
+ // renderOrderSummary();
