@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Load a font called Roboto from Google Fonts. -->
+     <link rel="icon" type="image/icon-x" href="/images/amazon-mobile-logo-white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
   <body>
     <div class="amazon-header">
       <div class="amazon-header-left-section">
-        <a href="amazon.html" class="header-link">
+        <a href="index.html" class="header-link">
           <img class="amazon-logo"
             src="images/amazon-logo-white.png">
           <img class="amazon-mobile-logo"
@@ -54,7 +55,7 @@
     <div class="main">
       <div class="page-title">Your Orders</div>
 
-      <div class="orders-grid">
+      <div class="orders-grid js-orders-grid">
         <div class="order-container">
           
           <div class="order-header">
@@ -187,6 +188,6 @@
       </div>
     </div>
 
-    <script src="scripts\checkout\orderSummary.js"></script>
+    <script src="scripts/orders.js" type="module"></script>
   </body>
 </html>

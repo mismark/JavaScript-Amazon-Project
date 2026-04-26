@@ -1,6 +1,5 @@
 export let cart;
 loadFromStorage();
-console.log("js loaded")
 export function loadFromStorage(){
     cart=JSON.parse(localStorage.getItem('cart'));//to store on a local storage 
 
@@ -32,7 +31,12 @@ export function updateCartQuantity(){
           });
 
 
-          document.querySelector('.js-cart-quantity').innerHTML=cartQuantity;     
+          const cartQuantityElement = document.querySelector('.js-cart-quantity');
+
+if (cartQuantityElement) {
+  cartQuantityElement.innerHTML = cartQuantity;
+}
+     
 
 }
 
